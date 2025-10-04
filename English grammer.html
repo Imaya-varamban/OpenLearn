@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Openlearn</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/main-logo.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        #subjects {
+            color: red;
+            margin-top: 1em;
+            text-align: center;
+        }
+
+        .subject {
+            background-color: #fff;
+            border: 1px solid #312d2d;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+        .contents p{
+                margin-left: 10px;
+        }
+
+        #subject-list {
+            width: 50%;
+            border: 2px solid black;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10%;
+        }
+        .contents{
+            
+            width:60% ;
+            margin-top: 3%;
+            margin-left: 5%;
+            text-align: left;
+        }
+        .video{
+            width: 70%;
+            margin-left: 10px;
+            height: 400px;
+
+        }
+       strong{
+        margin-left: 10px;
+        margin-top: 10px;
+        color: black;
+        font-size: 1.1em;
+        
+       }
+       .he{
+                font-size: 1.9em; 
+                color: black;
+                margin-left: 5px;
+                padding: 10px;
+            }
+    p{
+        color: black;
+        margin-left: 80px;
+    }
+    li{
+                color: black;
+                margin-left: 40px;
+                margin-bottom: 20px;
+}
+ .bxn2{
+    width:40%;
+    position: relative;
+    height: 15vh;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.bxn2 h1{
+    font-size: 1.3em;
+}
+.cover{
+    display: flex;
+    overflow:hidden;
+    
+}
+.download-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+       
+       
+@media (max-width: 600px) {
+            #subject-list {
+                width: 100%;
+                padding-left: 5%;
+                
+            }
+            .contents{
+                width: 80%;
+            }
+            .contents p{
+                margin-left: 10px;
+            }
+
+            header {
+                text-align: center;
+            }
+            strong
+            {
+                color: black;
+                font-size: 1.1em;
+                color: black;
+                margin-top: 10px;
+            }
+            .video{
+                width: 90%;
+                height: 20vh;
+            }
+            .he{
+                font-size: 1.9em; 
+                color: black;
+                padding: 10px;                
+            }
+            p{
+                color: black;
+
+            }
+            li{
+                color: black;
+                margin-left: 40px;
+                margin-bottom: 20px;
+            }
+            .bxn2{
+
+                width: 80%;
+                margin: 10px;
+                margin-left: 10px;
+                height: 15vh;
+            }
+            .cover{
+                display: flex;
+                flex-direction: column;
+            }
+            .download-me{
+                display: flex;
+                flex-direction: column;
+            }
+                
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <p class="m-0 fw-bold" style="font-size: 25px;"><img src="img/main-logo.jpg" alt="" height="50px">Open<span
+                    style="color: hsl(202, 85%, 56%);">Learn</span></p>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="login.html" class="nav-item nav-link"><i class="fa fa-user"></i></a>
+                <a href="#" class="nav-item nav-link">
+                <div id="google_translate_element">
+                </div>
+
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="subjects">
+            <h2>English Grammer
+            </h2>
+            <div id="subject-list">
+                <!-- Content goes here -->
+            </div>
+            <div class="cover">
+                <div class="contents">
+                    <strong class="he">1.English Alphabets</strong>
+                    <p>The English alphabet consists of 26 letters, divided into vowels and consonants:</p>
+                    <p><strong>Vowels (5):</strong> A, E, I, O, U (sometimes Y is included as a vowel)</p>
+                    <p><strong>Consonants (21):</strong> <br>All other letters apart from vowels Each letter has two forms: uppercase (capital) and lowercase (small), which are used in different contexts such as proper nouns, sentence beginnings, and emphasis.</p>
+                    <strong >i. Pronunciation and Phonetics</strong>
+                   <p> Each letter in the English alphabet has a distinct sound, but pronunciation varies depending on word usage. For example:</p>
+                    <Li>The letter ‘C’ sounds like /k/ in cat but /s/ in ceiling.</Li>
+                   <li> The letter ‘G’ sounds like /g/ in go but /j/ in gentle. Understanding phonetics helps improve pronunciation and comprehension.</li>
+                    <strong>ii. Alphabetical Order and Usage</strong>
+                    <p>The alphabetical order is essential for organizing information, such </p>
+                    <li>Dictionaries and phone directories</li>
+                    <li>Filing and categorization systems</li>
+                    <li>Arranging words in lists or indexes</li>
+                    <strong>iii. The Role of Letters in Spelling and Grammar</strong>
+                    <p>Letters combine to form words, and spelling rules guide their arrangement. For example:</p>
+                    <li>Silent letters: knock (silent ‘k’), comb (silent ‘b’)</li>
+                    <li>Double letters: apple, address</li>
+                    <li>Common spelling patterns: tion in nation, ough in through</li>
+                   <strong> iv. Learning and Practicing the Alphabet</strong>
+                    <p>To master the English alphabet, learners can:</p>
+                    <li>Recite the alphabet regularly</li>
+                    <li>Practice spelling common words</li>
+                    <li>Use alphabet-related games and exercises</li>
+            <strong  class="he" >2. Parts of Speech</strong><br>
+                    <strong>The English language comprises eight parts of speech, each serving a unique function in a sentence:</strong>
+                  <ol>
+                    <li><b>Nouns:</b> Represent people, places, things, or ideas (e.g., cat, city, happiness).</li>
+                    <li><b>Pronouns:</b> Replace nouns to avoid repetition (e.g., he, she, it, they).</li>
+                    <li><b>Verbs:</b> Indicate action or state of being (e.g., run, be, think).</li>
+                    <li><b>Adjectives:</b> Describe nouns or pronouns (e.g., beautiful, large, red).</li>
+                    <li><b>Adverbs:</b> Modify verbs, adjectives, or other adverbs (e.g., quickly, very, well).</li>
+                   <li> <b>Prepositions:</b> Show relationships between nouns or pronouns and other words (e.g., on, in, at, with).</li>
+                    <li><b>Conjunctions:</b> Connect words, phrases, or clauses (e.g., and, but, because).</li>
+                  </ol>
+                <video controls class="video">
+                    <source src="videos/_luxuryfijis(MP4).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video><br>
+                <strong class="he"> 3. Sentence Structure:</strong><br>
+                        <p>A sentence must have a subject and a predicate to be complete. There are four main types of sentences:</p>
+                      <ul>
+                        <li><b>Declarative Sentences:</b> Make a statement (e.g., The sun is shining.)</li>
+                        <li><b>Interrogative Sentences:</b> Ask a question (e.g., Where are you going?)</li>
+                        <li><b>Imperative Sentences: </b>Give a command or request (e.g., Close the door.)</li>
+                        <li><b>Exclamatory Sentences:</b> Express strong emotion (e.g., What a beautiful day!)</li>
+                      </ul>
+                      <strong class="he">4. Subject-Verb Agreement:</strong>
+                      <p>The verb in a sentence must agree with its subject in number and person:</p>
+                      <li><b>Singular subject →</b>  ingular verb (e.g., She is happy.) </li>  
+                      <li><b>Plural subject →</b> Plural verb (e.g., They are happy.)  </li>
+                      
+                      <strong class="he">5.Punctuation Rules</strong>
+                      <p>Punctuation marks help clarify meaning and structure sentences:</p>
+                      <ul>
+                        <li><b>Period (.):</b>Ends a declarative sentence.</li>
+                        <li><b>Comma (,):</b>Separates ideas, items in lists, or clauses.</li>
+                        <li><b>Apostrophe (’) :</b>Shows possession or contraction (e.g., John’s book, don’t).</li>
+                        <li><b>Question Mark (?):</b> Ends an interrogative sentence.</li>
+                        <li><b>Exclamation Mark (!):</b>Expresses strong emotion or excitement.</li>
+                        <li><b></b></li>
+                        
+                      </ul>
+                      <strong class="he">How to Use Grammar in English Effectively</strong><br>
+                            <p>Applying grammar correctly enhances communication in speaking and writing. Here are some essential tips:</p>
+                            <ol>
+                                <b>  1. Construct Clear and Concise Sentences:</b>
+                                        <p>Avoid overly complex sentences that may confuse the reader. Use simple and compound sentences to express ideas effectively.</p>
+                            <b>2. Maintain Consistency in Tense:</b>
+                                    <p>When writing or speaking, ensure that tenses remain consistent to avoid confusion. For example:</p>
+                                    <li><b></b>Incorrect:</b> She was running and eats lunch.</li>
+                                    <li><b>Correct:</b> She was running and ate lunch</li>
+                            <b>3. Use Prope.r Pronoun Reference:</b>
+                                    <p>Pronouns should clearly refer to a specific noun to avoid ambiguity:</p>
+                                    <li><b>Confusing:</b> When Sarah met Lisa, she was excited. (Who is ‘she’ referring to?)</li>
+                                    <li><b>Clear: </b>Sarah was excited when she met Lisa.</li>
+                            <b>4. Avoid Common Grammar Mistakes:</b>
+                                 <p> Some common mistakes include:</p>
+                                    <li><b>Misplaced Modifiers:</b> Incorrect: She almost drove her kids to school every day. (Did she almost drive?)</li>
+                                <li> <b>Correct:</b> She drove her kids to school almost every day.</li>
+                                    <li><b>Run-on Sentences:</b> Incorrect: I love ice cream it is my favorite dessert.</li>
+                                <li><b> Correct:</b> I love ice cream. It is my favorite dessert.</li>
+                                <li><b>Sentence Fragments:</b> Incorrect: Because I was late.</li>
+                                    <li><b>Correct:</b> I was late because I missed the bus.</li>
+                           <b> 5. Improve Writing with Grammar Tools</b>
+                            <p>Utilizing grammar checkers, proofreading, and reading extensively helps reinforce grammar knowledge and application.</p>
+                            </ol>
+
+                        <strong class="he">Using English in Daily Life:</strong>    
+                            <p>English is a widely spoken language that plays a vital role in everyday communication, education, business, and social interactions. Integrating English into daily life enhances language proficiency and builds confidence in both written and spoken communication. Here are some practical ways to use English effectively in daily life.</p>
+                            <strong>1. Conversations and Social Interactions</strong>
+                                <p>Engaging in English conversations with family, friends, colleagues, or strangers helps improve fluency. Practicing greetings, small talk, and discussions on various topics enhances communication skills. Examples include:</p>
+                                <ul>
+                                    <li>Ordering food at a restaurant (e.g., “Can I have a cup of coffee, please?”)</li>
+                                    <li>Asking for directions (e.g., “Excuse me, how do I get to the train station?”)</li>
+                                    <li>Making phone calls (e.g., “Hello, I’d like to schedule an appointment.”)</li>
+                                </ul>
+                            <strong>2. Reading and Writing in English</strong>   
+                            <p>Reading newspapers, books, and online articles in English expands vocabulary and comprehension. Writing daily, whether through journaling, emails, or social media posts, reinforces grammar and sentence structure. Examples include:</p> 
+                            <ul>
+                                <li>Writing a to-do list or diary entry in English</li>
+                                <li>Sending text messages or emails to colleagues</li>
+                                <li>Reading English novels or news articles</li>
+                            </ul>
+                            <strong>3. Watching and Listening to English Content</strong>
+                            <p>Watching English movies, TV shows, and YouTube videos improves listening skills and pronunciation. Listening to English podcasts, audiobooks, and songs also helps understand different accents and expressions.</p>
+                            <ul>
+                                <li>Watching news channels like BBC or CNN</li>
+                                <li>Listening to music with English lyrics</li>
+                                <li>Following English podcasts on topics of interest</li>
+                            </ul>
+                            <strong>4. Workplace and Professional Use</strong>
+                            <p>English is essential in professional settings for communication, presentations, and teamwork. Writing reports, participating in meetings, and networking in English enhance career growth. Examples include:</p>
+                            <ul>
+                                <li>Writing professional emails (e.g., “I am writing to inquire about…”)</li>
+                                <li>Giving presentations in English</li>
+                                <li>Attending English-speaking workshops and seminars</li>
+                            </ul>
+                            <strong>5. Practicing English Through Technology</strong>
+                            <p>Using language-learning apps, online courses, and translation tools improves English proficiency. Engaging in online discussions, forums, and social media in English provides real-world practice.</p>
+                            <ul>
+                                <li>Using apps like Duolingo or Grammarly</li>
+                                <li>Joining English-speaking groups on social media</li>
+                                <li>Playing video games with English dialogues</li>
+                            </ul>
+                            </div>
+                            <div class="bxn2">
+                                <h1>Materials</h1>
+                                <p>Click to download</p>
+                                <div class="download-me">
+                                    <a href="materials/basic-english-grammar.pdf" download="English-Grammer">1.material </a>
+                                    <a href="materials/English-Grammar-For-Dummies.pdf" download="English-Grammer">2.material</a>
+
+                                </div>
+                                
+                            </div>
+            </div>           
+        </section>
+    </main>
+    <script>
+        if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+    </script>
+    <footer style="width: auto; height: 10vh;
+    background-color: gray;">
+       <h1 style="text-align: center; font-size: 1.5em; padding: 25px;">@copyright</h1> 
+
+    </footer>
+</body>
+</html>

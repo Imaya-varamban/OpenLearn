@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Openlearn : mathematics</title>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand" style="text-decoration: none; color: black;">
+            <h1 style="font-size: 1.9em; margin-left: 30%;">Open<span style="color:hsl(202, 85%, 56%); ;">Learn</span></h1>
+        </a>
+        <div class="collapse" id="navbarCollapse" >
+            <div class="navbar-nav">
+                <a href="index.html" class="home" style="color: black;">Home</a>
+                <a href="about.html" class="nav-item nav-link"style="color: black;">About</a>
+                <a href="courses.html" class="nav-item nav-link"style="color: black;">Courses</a>
+                <a href="contact.html" class="nav-item nav-link"style="color: black;">Contact</a>
+                <a href="login.html" class="nav-item nav-link"style="color: black;"><i class="fa fa-user"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="con">
+            <strong><i class="fas fa-cloud"></i>Welcome</strong> to maths class  <br>
+            <h2>This is our maths class page </h2>
+            <h4>This page for 11th and 12th students</h4>
+        </div>
+    </header>
+
+    <div class="theme-toggle">
+        <button onclick="toggleTheme()" class="light" id="#light">   
+            <li>light</li>
+        </button>   
+        <button onclick="toggleTheme()" class="dark" id="#dark">   
+            <li>dark</li>
+
+        </button>
+    </div>
+
+    <div class="search" style="border: 2px solid black;">
+        <h1>Search Content in Paragraphs:</h1>
+        <input type="text" id="searchInput" placeholder="Search for a word or phrase...">
+        <button onclick="search()">Search</button>
+
+        <div id="content" class="content">
+            <p>ical behavior of elements, facilitating the study and creation of new compounds and materials. If you have more specific questions or need examples, feel free to ask!</p>
+        </div>
+    </div>
+
+    <script>
+        function search() {
+            const query = document.getElementById('searchInput').value.trim().toLowerCase();
+            if (!query) return;
+
+            const paragraphs = document.querySelectorAll('#content p');
+            paragraphs.forEach(paragraph => {
+                const text = paragraph.textContent.toLowerCase();
+                const originalHTML = paragraph.innerHTML;
+                paragraph.innerHTML = originalHTML.replace(/<span class="highlight">|<\/span>/g, '');
+                if (text.includes(query)) {
+                    const regex = new RegExp(`(${query})`, 'gi');
+                    paragraph.innerHTML = originalHTML.replace(regex, '<span class="highlight">$1</span>');
+                } else {
+                    paragraph.style.display = 'none';
+                }
+            });
+        }
+
+        document.getElementById('searchInput').addEventListener('input', search);
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+    </script>
+
+    <style>
+        body {
+            width: 100%;height: auto;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        header {
+            width: 100%;
+            height: 25vh;
+            background-color: white;
+            text-align: center;
+        }
+        .content {
+            top: 150px;
+            left: 59%;
+            position: absolute;
+            width: 100%;
+            border: 2px solid black;
+            margin-left: 30px;
+            height: 100vh;
+            background-color: rgb(219, 214, 209);
+        }
+        .search {
+            position: absolute;
+            top: 60%;
+            margin-left: 50px;
+            width: 500px;
+            height: auto;
+            box-sizing: border-box;
+        }
+        .text {
+            position: relative;
+            top: 0px;
+        }
+        .con{
+            height: 99%;
+        }
+        .navbar {
+            display: flex;
+            margin: 1%;
+            border: 1px;
+            background-color: rgb(243, 243, 243);
+            width: 98%;
+            height: 30vh;
+            z-index: 9;
+            border-radius: 10px;
+        }
+        .op-text {
+            text-decoration: none;
+            position: absolute;
+            margin-top: 17px;
+            margin-left: 4%;
+        }
+        .navbar-brand {
+            margin-left: 20px;
+            font-weight: bolder;
+        }
+        .collapse {
+            position: absolute;
+            justify-content: right;
+            margin-left: 68%;
+        }
+        .navbar-nav {
+            display: flex;
+            font-size: 1.1em;
+        }
+        .navbar-nav a {
+            margin-right: 15px;
+            margin-top: 25px;
+            text-decoration: none;
+        }
+        .dropdown-item {
+            display: none;
+        }
+        .logo {
+            width: 40%;
+            height: 28vh;
+            position: absolute;
+            background-size: cover;
+            margin: 5px;
+        }
+        
+        input[type=text] {
+            width: 50%;
+            padding: 11px 20px;
+            margin: px 0;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 2px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 20%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        .highlight {
+            background-color: yellow;
+            color: green;
+        }
+        .theme-toggle {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            width: 70%;
+            left: 85%;
+        }
+        button.light{
+            background-color:transparent;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        button.dark{
+        
+            background-color:rgb(228, 226, 224);
+            color: black;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .dark-theme {
+            text-decoration: none;
+            background-color: black;
+            color: white;
+        }
+        
+        .dark-theme .content {
+            background-color: rgb(50, 50, 50);
+        }
+        .dark-theme input[type=text] {
+            background-color: rgb(70, 70, 70);
+            color: white;
+        }
+        .dark-theme button {
+            background-color: #d71e1e;
+        }
+        .dark-theme .highlight {
+            background-color: yellow;
+            color: black;
+        }
+        .dark-theme .con{
+            background-color: black;
+            color: white;
+        }
+        .dark-theme .navbar >h1 {
+            background-color: black;
+            color: white;
+        }
+        
+    </style>
+</body>
+</html>
